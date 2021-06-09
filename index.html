@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map Geolocation example</title>
+    <style>
+        input{
+            width:200px;
+            height: 10px;
+            padding: 10px;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- get latitude and longitude from address using google map api -->
+    <input type="text" id="address" autocomplete="off">
+    <input type="text" id="latitude" readonly>
+    <input type="text" id="longitude" readonly>
+    <script src="index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlG0itXA5sgrVvsONczFJBqij_Pjz8GrY&libraries=places&callback=initialize"></script>
+</body>
+</html>
